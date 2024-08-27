@@ -17,17 +17,31 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(99,166,210,1) 80%, #FFD1DA 100%);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.introduction{
+  border-left: 1px solid white !important;
+}
+
+span.ant-switch-inner {
+  background-color: #42B2E6 !important;
+}
+
+.ant-switch-checked span.ant-switch-inner {
+  background-color: #FFD1DA !important;
+}
+
+:where(.css-dev-only-do-not-override-1gwfwyx).ant-timeline .ant-timeline-item-head{
+  background-color: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-1gwfwyx).ant-timeline .ant-timeline-item-tail {
+  border-inline-start: 2px solid #ffffff9c !important;
 }
